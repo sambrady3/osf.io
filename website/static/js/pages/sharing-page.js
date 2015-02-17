@@ -33,3 +33,9 @@ if ($.inArray('admin', ctx.user.permissions) !== -1) {
     var privateLinkTable = new PrivateLinkTable('#linkScope', tableUrl, ctx.node.isPublic);
     $('#privateLinkTable').on('click', '.link-url', function(e) { e.target.select(); });
 }
+
+$(function() {
+    $('.admin-info').popover({
+        trigger: 'hover'
+    });
+});
