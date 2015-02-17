@@ -1530,7 +1530,6 @@ class Node(GuidStoredObject, AddonModelMixin):
         """
         if not self.can_edit(auth):
             return
-
         if self.is_folder:
             raise NodeStateError("Folders may not be registered")
 
